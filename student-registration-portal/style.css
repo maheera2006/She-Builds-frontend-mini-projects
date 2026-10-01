@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f4f6f8; color: #222; font-family: Arial, sans-serif; line-height: 1.5; }
+header { background: #0078d7; color: #fff; padding: 14px 20px; }
+header h1 { margin: 0; font-size: 1.5rem; }
+nav { margin-top: 8px; }
+nav a { color: #fff; margin-right: 16px; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 900px; margin: 0 auto; padding: 20px 16px 40px; }
+h2 { margin-top: 0; color: #0078d7; }
+
+.card { background: #fff; border: 1px solid #ccd3da; border-radius: 8px; padding: 16px; margin-bottom: 20px; }
+.card h3 { margin-top: 0; }
+
+label { display: block; margin-top: 10px; font-weight: bold; }
+input, select { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #999; border-radius: 4px; font-size: 1rem; }
+
+button { background: #0078d7; color: #fff; border: 0; border-radius: 4px; padding: 8px 14px; margin-top: 12px; font-size: 1rem; cursor: pointer; }
+button:hover:not(:disabled) { background: #005a9e; }
+button:disabled { background: #aab4bf; cursor: not-allowed; }
+button.secondary { background: #fff; color: #0078d7; border: 1px solid #0078d7; }
+button.secondary:hover:not(:disabled) { background: #e8f2fc; }
+button.danger { background: #d93025; }
+button.danger:hover:not(:disabled) { background: #a52714; }
+
+.subject-row { display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: 8px; align-items: center; margin-bottom: 8px; }
+.subject-row button { margin-top: 4px; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+th, td { border: 1px solid #ccd3da; padding: 8px; text-align: left; }
+th { background: #eef3f8; }
+td button { margin-top: 0; padding: 4px 10px; }
+
+.error { color: #d93025; font-weight: bold; min-height: 1.5em; }
+.success { color: #188038; font-weight: bold; }
+.pass { color: #188038; font-weight: bold; }
+.fail { color: #d93025; font-weight: bold; }
+.empty { color: #666; border: 1px dashed #ccd3da; border-radius: 8px; padding: 14px; margin: 0; }
+.hidden { display: none; }
+.note { color: #666; font-size: .9rem; }
+
+.event-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.event-card { margin-bottom: 0; }
+.event-card p { margin: 4px 0; overflow-wrap: anywhere; }
+.event-card button { margin-right: 8px; }
+section { scroll-margin-top: 10px; }
+
+@media (max-width: 600px) { .subject-row { grid-template-columns: 1fr; } }
