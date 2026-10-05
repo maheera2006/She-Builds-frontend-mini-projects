@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spandan Fest | College Event Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1. HEADER + NAVIGATION -->
+<header>
+  <a class="back" href="../index.html">&larr; Back to all projects</a>
+  <nav>
+    <strong class="logo">Spandan Fest</strong>
+    <button id="menuBtn">Menu</button> <!-- only visible on phones -->
+    <ul id="links">
+      <li><a href="#home">Home</a></li><li><a href="#events">Events</a></li>
+      <li><a href="#schedule">Schedule</a></li><li><a href="#gallery">Gallery</a></li>
+      <li><a href="#register">Register</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- 2. HOME -->
+<section id="home" class="hero">
+  <h1>Spandan Fest 2026</h1>
+  <p>Music, code and sport. Choose an event and register in one minute.</p>
+  <a class="btn" href="#events">See events</a>
+  <div class="ann">
+    <h2>Announcements</h2>
+    <ul id="annList"><li>Registrations close on 20 Nov.</li><li>Carry your college ID.</li></ul>
+    <div class="inline">
+      <input id="annText" placeholder="Type a new announcement" aria-label="New announcement">
+      <button id="annBtn" class="btn small">Add</button>
+    </div>
+  </div>
+</section>
+
+<!-- 3. EVENTS -->
+<section id="events">
+  <h2>Events</h2>
+  <div class="filters">
+    <button class="on" data-cat="All">All</button>
+    <button data-cat="Music">Music</button><button data-cat="Tech">Tech</button>
+    <button data-cat="Cultural">Cultural</button><button data-cat="Sports">Sports</button>
+  </div>
+  <div class="grid" id="cards">
+    <article class="card" data-category="Music">
+      <small>Music</small><h3>Battle of Bands</h3><p>Live college band contest.</p>
+      <p><b>26 Nov</b>, 10:00 AM<br>Open Air Theatre</p>
+      <button class="btn small reg-btn" data-event="Battle of Bands">Register</button>
+    </article>
+    <article class="card" data-category="Tech">
+      <small>Tech</small><h3>Hack in 6 Hours</h3><p>Build a small web app in a team.</p>
+      <p><b>26 Nov</b>, 1:00 PM<br>Lab 3</p>
+      <button class="btn small reg-btn" data-event="Hack in 6 Hours">Register</button>
+    </article>
+    <article class="card" data-category="Tech">
+      <small>Tech</small><h3>Quiz League</h3><p>General and tech quiz.</p>
+      <p><b>27 Nov</b>, 11:00 AM<br>Seminar Hall</p>
+      <button class="btn small reg-btn" data-event="Quiz League">Register</button>
+    </article>
+    <article class="card" data-category="Cultural">
+      <small>Cultural</small><h3>Street Dance</h3><p>Solo and group dance.</p>
+      <p><b>27 Nov</b>, 3:00 PM<br>Main Stage</p>
+      <button class="btn small reg-btn" data-event="Street Dance">Register</button>
+    </article>
+    <article class="card" data-category="Sports">
+      <small>Sports</small><h3>Football</h3><p>5-a-side knockout.</p>
+      <p><b>28 Nov</b>, 9:00 AM<br>Main Ground</p>
+      <button class="btn small reg-btn" data-event="Football">Register</button>
+    </article>
+    <article class="card" data-category="Cultural">
+      <small>Cultural</small><h3>Photo Walk</h3><p>Theme-based photo contest.</p>
+      <p><b>28 Nov</b>, 4:00 PM<br>Campus Gate</p>
+      <button class="btn small reg-btn" data-event="Photo Walk">Register</button>
+    </article>
+  </div>
+</section>
+
+<!-- 4. SCHEDULE -->
+<section id="schedule">
+  <h2>Schedule</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Date</th><th>Time</th><th>Event</th><th>Venue</th></tr></thead>
+      <tbody>
+        <tr><td>26 Nov</td><td>10:00 AM</td><td>Battle of Bands</td><td>Open Air Theatre</td></tr>
+        <tr><td>26 Nov</td><td>1:00 PM</td><td>Hack in 6 Hours</td><td>Lab 3</td></tr>
+        <tr><td>27 Nov</td><td>11:00 AM</td><td>Quiz League</td><td>Seminar Hall</td></tr>
+        <tr><td>27 Nov</td><td>3:00 PM</td><td>Street Dance</td><td>Main Stage</td></tr>
+        <tr><td>28 Nov</td><td>9:00 AM</td><td>Football</td><td>Main Ground</td></tr>
+        <tr><td>28 Nov</td><td>4:00 PM</td><td>Photo Walk</td><td>Campus Gate</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 5. GALLERY (put real photos in the images folder and use <img src="images/photo1.jpg">) -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="grid g">
+    <div style="background:#c2410c">Battle of Bands</div>
+    <div style="background:#0f766e">Hack in 6 Hours</div>
+    <div style="background:#4338ca">Quiz League</div>
+    <div style="background:#a21caf">Street Dance</div>
+    <div style="background:#15803d">Football</div>
+    <div style="background:#b45309">Photo Walk</div>
+  </div>
+</section>
+
+<!-- 6. REGISTRATION -->
+<section id="register">
+  <h2>Register</h2>
+  <p>Fill all fields, choose an event, then click Register.</p>
+  <form id="regForm" novalidate>
+    <label for="rn">Name</label><input id="rn"><small class="err" id="rnErr"></small>
+    <label for="re">Email</label><input id="re"><small class="err" id="reErr"></small>
+    <label for="rm">Mobile (10 digits)</label><input id="rm"><small class="err" id="rmErr"></small>
+    <label for="rd">Department</label><input id="rd"><small class="err" id="rdErr"></small>
+    <label for="ry">Year</label>
+    <select id="ry"><option value="">Select year</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+    <small class="err" id="ryErr"></small>
+    <label for="rv">Event</label>
+    <select id="rv"><option value="">Select event</option><option>Battle of Bands</option><option>Hack in 6 Hours</option><option>Quiz League</option><option>Street Dance</option><option>Football</option><option>Photo Walk</option></select>
+    <small class="err" id="rvErr"></small>
+    <button class="btn" type="submit">Register</button>
+  </form>
+  <p id="ok" class="ok" hidden></p>
+</section>
+
+<!-- 7. CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Fest office, Main Block, Room 12 | fest@college.edu | +91 90000 00000</p>
+  <form id="cForm" novalidate>
+    <label for="cn">Name</label><input id="cn"><small class="err" id="cnErr"></small>
+    <label for="cm">Message</label><textarea id="cm" rows="3"></textarea><small class="err" id="cmErr"></small>
+    <button class="btn" type="submit">Send message</button>
+  </form>
+  <p id="cok" class="ok" hidden></p>
+</section>
+</main>
+
+<footer>&copy; 2026 Spandan Fest, Your College Name</footer>
+<script src="script.js"></script>
+</body>
+</html>

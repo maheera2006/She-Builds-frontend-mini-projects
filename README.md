@@ -1,47 +1,26 @@
-# Module 3 – Front-End Mini Projects
+# Front-End Mini Projects
+One repo, one entry point: `index.html`.
 
-This repository contains **two separate front-end projects** combined under Module 3:
+| Folder | Project | Stack |
+|---|---|---|
+| `student-portal/` | Student Registration & Result Portal | HTML5, Bootstrap 5 (CDN), JS |
+| `event-portal/` | Responsive College Event Portal | HTML5, CSS3, JS |
+| `docs/` | Product analysis, gaps, approach, SDLC, tests | Markdown |
 
----
+## Run
+Open `index.html` in a browser (Bootstrap needs internet).
 
-## 1. Student Registration & Result Portal
-A responsive portal built with **HTML5, Bootstrap, CSS3, and JavaScript**.
+## Host (GitHub Pages)
+Push to GitHub, then Settings > Pages > Deploy from branch `main` / root. Add the live link here.
 
-### Features
-- Student details form
-- Dynamic course & subject selection
-- Marks entry with validation
-- Automatic calculation of total, percentage, grade, and pass/fail
-- Responsive design
+## To finish
+- Replace gallery tiles with photos in `event-portal/images/`.
+- Replace festival name, dates and college details.
+- Add screenshots and your name/roll number to `docs/`.
 
-👉 [Open Student Registration Portal](./student-registration-portal/index.html)
-
----
-
-## 2. College Event Portal
-A responsive event management portal built with **HTML5, CSS3, Responsive Design, and JavaScript**.
-
-### Features
-- Attractive homepage with festival highlights
-- Event listings with details and registration
-- Schedule page
-- Responsive gallery
-- Contact page with form validation
-
-👉 [Open College Event Portal](./college-event-portal/index.html)
-
----
-
-## 📚 Technologies Used
-- HTML5
-- CSS3
-- Bootstrap
-- JavaScript
-- Responsive Design
-
----
-
-## 🎯 Learning Outcomes
-- Hands-on experience with forms, validation, DOM manipulation
-- Responsive layouts using Bootstrap and CSS media queries
-- Dynamic content updates with JavaScript
+## For beginners: how the code works
+- **HTML** = the content (forms, cards, tables).
+- **CSS / Bootstrap** = the looks and mobile layout.
+- **JavaScript** = the behaviour. Every `script.js` follows: *find element -> listen for click/submit -> check input -> change the page*.
+- Read `student-portal/script.js` first (numbered steps), then `event-portal/script.js`.
+- Try changing the pass mark (`35`, `40`) or the colours in `style.css` and refresh to see what happens.
