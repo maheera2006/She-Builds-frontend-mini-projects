@@ -11,7 +11,8 @@ One repo, one entry point: `index.html`.
 Open `index.html` in a browser (Bootstrap needs internet).
 
 ## Host (GitHub Pages)
-Push to GitHub, then Settings > Pages > Deploy from branch `main` / root. Add the live link here.
+Push to GitHub, then Settings > Pages > Deploy from branch `main` / root.
+Live Link[https://maheera2006.github.io/She-Builds-frontend-mini-projects/]
 
 ## To finish
 - Replace gallery tiles with photos in `event-portal/images/`.
